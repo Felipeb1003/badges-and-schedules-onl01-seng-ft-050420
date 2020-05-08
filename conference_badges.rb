@@ -24,8 +24,7 @@ def printer (attendee)
     badges_and_rooms = []
     badges_and_rooms << batch_badge_creator(attendee)
     badges_and_rooms << assign_rooms(attendee)
-    badges_and_rooms.flatten
-    badges_and_rooms.each do |answer|
+    badges_and_rooms.flatten.each do |answer|
       puts "#{answer}"
     end
   
